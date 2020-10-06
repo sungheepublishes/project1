@@ -1,0 +1,119 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Nanum+Myeongjo:regular,800");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+.wrapProgram .section {max-width: 1910px; height: 900px;}
+.wrapProgram .contains {width: 1240px; height: 900px; margin: 0 auto; position: relative;}
+
+/* section #cnt1 */
+#cnt1 {background: url("../images/program/cnt_1bg.jpg") no-repeat center bottom; background-size: cover;  font-family: Noto Sans KR;}
+
+#cnt1 h3 {position: absolute; top: 330px; left: 250px; font-size: 100px; border-bottom: 2px solid #ffffff;}
+#cnt1 .info {position: absolute; top: 440px; left: 800px; width: 1000px;}
+#cnt1 .info h4 {font-size: 25px; margin-bottom: 30px;}
+#cnt1 .info strong {font-size: 40px;}
+#cnt1 .info p {font-size: 20px;  margin-top: 53px; font-family: "나눔명조", "Nanum Myeongjo"; line-height: 30px; font-style: normal;}
+
+/* section #cnt2 */
+#cnt2 {font-family: Noto Sans KR;}
+.contains::after {clear: both; display: block; content: "";}
+
+.program_list > li {float: left; width: calc(100% / 3); margin-top: 100px; position: relative;}
+.program_list li a div {overflow: hidden;}
+.program_list li a div img {transition: all 0.5s; transform: translateX(-25px);}
+.program_list li a:hover div img, .program_list li a:focus div img {transform: scale(1.1); }
+.program_list > li a{display: block;} 
+.program_list > li a:nth-child(1) {overflow: hidden; width: 350px; height: 415px; background-size: cover; margin: 0 auto;}
+.program_list > li .program img {display: block; overflow: hidden; width: 400px; height: 400px; margin: 0 auto;} 
+
+.program_list li strong {font-size: 25px; color: #000000; margin-bottom: 45px; position: absolute; left: 40px; top: 420px;}
+.program_list li p {font-size: 20px; color: #000; position: absolute; left: 40px; top: 470px;}
+
+/* section #cnt3 */
+
+
+/* section #cnt4 */
+#cnt4 {position: relative; font-family: "Noto Sans KR";background: url(../images/program/cnt_4bg.jpg) no-repeat center; opacity: 0.7; background-size: cover;width: 100%;height: 900px;}
+#cnt4 .inner{position: absolute; top: 140px; left: 465px; width: 990px; height: 650px; line-height: 650px; background: rgba(248, 245, 245, 0.7); }
+#cnt4 .inner h5{display: block;height: 153px;font-size: 30px; line-height: 153px; color: #000; text-align: center; }
+
+* { box-sizing:border-box; }
+
+/* form starting stylings ------------------------------- */
+#cnt4 .inner .group { position:relative;}
+#cnt4 .inner form > input { display:block; font-size:18px; padding:10px 10px 10px 5px; width:200px; border:none; border-bottom:1px solid #757575;}
+#cnt4 .inner form > input:nth-child(3), #cnt4 .inner form > input:nth-child(4) {width: 835px;}
+#cnt4 .inner form > input:focus { outline:none; }
+
+/* LABEL ======================================= */
+#cnt4 .inner form label {
+  color:#999; 
+  font-size:18px; position:absolute; pointer-events:none;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+#cnt4 .inner form input:focus ~ label, #cnt4 .inner form input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}

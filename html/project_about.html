@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <!-- 파비콘 -->
+    <link rel="icon" href="../assets/images/common/favicon.ico">
+      <link rel="stylesheet" href="../assets/css/swiper-bundle.css">
+      <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
+  
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script>
+         $(document).ready(function () {
+            /* $('#fullpage').fullpage({
+                //필요한 옵션을 추가 작성함
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['한화라이프 리즈', 'about 리즈', '푸터'],
+                scrollBar: true, //스크롤바 노출
+                // 스크립트를 적용시켜서 랜더링이 끝난 후 실행할 것이 있는 경우
+                afterRender: function () {
+                    $('#fp-nav .fp-tooltip').attr('aria-hidden', true);
+                }
+            }); */
+
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 본문 건너뛰기 -->
+    <div id="skip">
+        <a href="#container">본문 바로가기</a>
+    </div>
+
+    <header id="header">
+        <div>
+            <h1 class="logo f_l p_r" id="logo">
+                <a href="../index.html"><span class="blind-b">헤이리 세라믹 아트 센터</span></a>
+            </h1>
+        </div>
+        <nav id="gnb" class="font2">
+            <h2 class="blind-b">주메뉴</h2>
+            <ul>
+                <li>
+                    <a href="../html/project_about.html">About</a>
+                </li>
+                <li>
+                    <a href="../html/program_about.html">Program</a>
+                    <ul style="display: none;">
+                        <li><a href="">Program is</a></li>
+                        <li><a href="">Reservation</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Community</a>
+                    <ul style="display: none;">
+                        <li><a href="">Q&amp;A</a></li>
+                        <li><a href="">News</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="section p_r" id="cnt1">
+        <strong class="title1">About</strong>
+    </section>
+
+    <section class="section p_r" id="cnt2">
+        <!-- 사진 클릭시 갤러리로 이동 -->
+        <div>
+            <a href="#"><img src="../assets/images/about/section2.png" alt="체험사진1"></a>
+            <div class="txt">
+                <h1>추억을 빚어나가는</h1>
+                <strong>헤이리 도자기 체험학교</strong>
+                <p>
+                    도자기 체험이 아직 생소하던 2011년부터<br>
+                    도자기 체험 교육과 다양한 프로그램을 만들어 온<br>
+                    파주 헤이리 도자기 체험학교는,<br>
+                    우리에게 가장 가까우면서도<br>
+                    소중한 흙을 직접 빚고 천천히 쌓아 올립니다.<br>
+                    <br>
+                    때로는 내 의도와 다르게 찌그러지기도 하고<br>
+                    삐뚤빼뚤할지도 모릅니다.
+                    <br>
+                    그렇지만 그 어떤 것이든 작품이 될 수 있다는 것을<br>
+                    알아가는 것 만큼 중요한 시간이 또 있을까요.<br>
+                    <br>
+                    헤이리 도자기 체험학교와 함께<br>
+                    재료와 기법, 형식에 얽매이지 않으며<br>
+                    다양한 재료를 활용하여 본인만의 도자기 세계를 만들어보세요.<br>
+                    <br>
+                    당신의 순간을 단단하게 빚어내고자 하는 열정으로<br>
+                    헤이리 도자기 체험학교는 언제나 이 자리에서 여러분을 기다리고 있습니다.<br>
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="cnt3">
+        <h1>시설 둘러보기</h1>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="slide1">
+                    <strong class ="showtext">제 1 체험실</strong>
+                    <div class = "img">
+                        <img src="../assets/images/about/workshop1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide" id="slide2">
+                    <strong class ="showtext">제 2 체험실</strong>
+                    <div class = "img">
+                        <img src="../assets/images/about/workshop2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide" id="slide3">
+                    <strong class ="showtext">제 3 체험실</strong>
+                    <div class = "img">
+                        <img src="../assets/images/about/workshop3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide" id="slide4">
+                    <strong class ="showtext">제 4 체험실</strong>
+                    <div class = "img">
+                        <img src="../assets/images/about/workshop4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide" id="slide5">
+                    <strong class ="showtext">제 5 체험실</strong>
+                    <div class = "img">
+                        <img src="../assets/images/about/workshop5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide" id="slide6">
+                    <strong class ="showtext">제 6 체험실</strong>
+                    <div class = "img">
+                        <img src="../assets/images/about/workshop6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide" id="slide7">
+                    <strong class ="showtext">제 7 체험실</strong>
+                    <div class = "img">
+                        <img src="../assets/images/about/workshop7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide" id="slide8">
+                    <strong class ="showtext">제 8 체험실</strong>
+                    <div class = "img">
+                        <img src="../assets/images/about/workshop8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+
+    </section>
+
+    <section class="section" id="cnt4">
+        <div class="map">
+            <h1>오시는 길</h1>
+            <p>경기도 파주시 헤이리마을길 93-75 더스텝 1층<br>031-941-2042</p>
+
+
+            <div id="daumRoughmapContainer1601858015857" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+            <!--
+                2. 설치 스크립트
+                * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+            -->
+            <script charset="UTF-8" class="daum_roughmap_loader_script"
+                src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp": "1601858015857",
+                    "key": "22asr",
+                    "mapWidth": "1100",
+                    "mapHeight": "570"
+                }).render();
+            </script>
+        </div>
+
+    </section>
+
+
+    <footer id="footer">
+        <div class="inner p_r">
+            <div class="address" id="address1">
+                <strong>고객센터<br>
+                    031 941 2042</strong>
+            </div>
+            <div class="address" id="address2">
+                <p class="title">헤이리 세라믹 아트 센터(주)</p>
+                <br>
+                <p>파주시 헤이리마을길 93-75 더스텝 1층 대표:</p>
+                <p>사업자등록번호:120-10-22587 통신판매업:제2014-경기파주-5773호 TEL.031-941-2042 FAX.0303-3444-2042</p>
+                <p class="copyright">COPYRIGHT &copy; 2020 HYERI CERAMIC ART CENTER ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+        <ul class="sns">
+            <li>
+                <a href="https://www.youtube.com/channel/UCOisAE4FhyyJFfWAhrC2LKQ?disable_polymer=true" target="_blank"
+                    title="유튜브 새창열기">
+                    <img src="../assets/images/icon/icon_youtube.png" alt="유튜브 링크">
+                    <span class="blind-b">유튜브</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/heyri_ceramic/" target="_blank" title="인스타그램 새창열기">
+                    <img src="../assets/images/icon/icon_instagram.png" alt="인스타그램 링크">
+                    <span class="blind-b">인스타그램</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/ceramicschoolheyri/" target="_blank" title="페이스북 새창열기">
+                    <img src="../assets/images/icon/icon_facebook.png" alt="페이스북 링크">
+                    <span class="blind-b">페이스북</span>
+                </a>
+            </li>
+        </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

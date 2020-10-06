@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* tag reset */
+body{margin: 0;padding: 0;}
+img{vertical-align: top;max-width: 100%;}
+
+/* #brick */
+#brick{display: flex;flex-wrap: nowrap;background-color: #ffeee3;}
+#brick .column{width: 25%;padding: 0 5px;box-sizing: border-box;transition: all 0.5s;}
+#brick .column img{width: 100%;padding-top: 10px;}
+
+/* 미디어쿼리 - style에서 조건식을 선언하는 방식
+@media 기기타입 and (조건식){
+    조건식을 만족하는 경우 스타일
+}
+
+태블릿일 경우 : 768 ~ 1024
+max-width: 1024px 최대크기가 1024이므로 결국 1024 이하 사이즈를 의미함
+한줄에 2개씩만 위치시키기 변경-줄바꿈을 허용, 컬럼 가로크기 50%
+*/
+@media screen and (max-width: 1024px) {
+    #brick{flex-wrap: wrap;}
+    #brick .column{width: 50%;}
+}
+
+/* 모바일일 경우 : 767이하 - 컬럼 가로크기 100%  */
+@media screen and (max-width: 767px) {
+    #brick .column{width: 100%;}
+}

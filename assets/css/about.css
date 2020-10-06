@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:regular);
+@import url(https://fonts.googleapis.com/css?family=Nanum+Myeongjo:regular,800);
+@import url(https://fonts.googleapis.com/css?family=Nanum+Gothic:700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:regular);
+
+@font-face{
+    font-family: nanum;
+  font-weight: 700;
+  font-style:normal;
+  src: url("../fonts/NanumSquare_acR.ttf.eot") format("embedded-opentype");
+  src: url("../fonts/BMJUA_ttf.eot");
+  src: url("../fonts/BMJUA_ttf.eot#iefix") format("embedded-opentype"),
+  url("../fonts/BMJUA_ttf.woff2") format("woff2"),
+  url("../fonts/BMJUA_ttf.woff") format("woff"),
+  url("../fonts/NanumSquare_acR.ttf") format("truetype");
+}
+
+/* section #cnt1 about title*/
+#cnt1 {position: relative;font-family: "나눔명조", "Nanum Myeongjo"; width: 1920px; height: 900px; background: url("../images/about/header.png") no-repeat center;background-size: cover; z-index: 800;}
+#cnt1 .title1{font-family: "Noto Sans KR"; position: absolute; bottom: 191px; left: 1250px; font-size: 100px;}
+#cnt1 .title1::before{content:"";position: absolute;width:297px; height: 3px;  bottom: -1px; left:0px; font-size: 120px; background-color: white;}
+
+/* section #cnt2 about text*/
+#cnt2 {margin-top:130px; margin-bottom: -130px; font-family: "나눔명조", "Nanum Myeongjo"; height: 900px; background-color: #ffeee3; color: black;}
+#cnt2 img{position: absolute; width:490px; right: 310px; color:black;}
+#cnt2 .txt{position: absolute; left:310px;}
+#cnt2 .txt h1{font-family: "Noto Sans KR"; font-style:bold; margin-top:5px;font-size: 30px; line-height:30px; margin-bottom: 5px;}
+#cnt2 .txt strong{font-family: "Noto Sans KR"; font-style:bold; font-size: 40px; line-height: 60px;}
+#cnt2 .txt p{font-family: nanum;margin-top:60px;font-size: 20px;line-height: 30px;letter-spacing:1px;font-style: bold;}
+
+
+/* section #cnt3 slider */
+#cnt3 {position:relative;font-family: "나눔명조", "Nanum Myeongjo"; width: 100%; height: 930px; background-color: #ffeee3; color: black;}
+#cnt3 h1{font-family: "Noto Sans KR"; font-style:bold; margin-bottom:50px;color:black;font-size: 40px; text-align:center;}
+#cnt3 {margin-top:250px; width: 100%;height: 930px;}
+#cnt3 .swiper-container{width: 1300px; height: 680px;}
+#cnt3 .swiper-wrapper{width:410px;height: 800px;}
+
+#cnt3 .swiper-slide{position: relative;}
+#cnt3 strong{position: absolute; top: 40%;left: 20%;width: 100%;height: 100%; visibility: hidden; opacity: 0; z-index:200;color:#373737;font-family:"Nanum Myeongjo";font-size:45px;}
+
+#cnt3 .swiper-slide:hover .showtext{position:absolute;top:35%;height: 550px;width: 100%; visibility: visible; opacity: 1;z-index:500;transition: .4s ease-in;}
+#cnt3 .swiper-slide:hover .img{top: 0; bottom: 0; left: 0; right: 0;height: 550px;width: 100%; opacity: 0.5; transition: .5s ease;background-color:#ffeee3;z-index:1;}
+
+/* section #cnt4 map */
+
+#cnt4 {height: 900px; font-family:"나눔명조","Nanum Myeongjo";color:black;z-index:100;}
+#cnt4 h1{font-family: "Noto Sans KR"; font-style:bold; margin-top: 100px;color:black;text-align:center;font-size: 40px;line-height: 10px;}
+#cnt4 p{font-family: nanum; font-size:15px; color:black;text-align:center; line-height: 30px; margin-top:30px;margin-bottom:20px;}
+#daumRoughmapContainer1601858015857{margin: 0 auto;}
+
+/* #footer {position: absolute; top:3600px;font-family: "나눔고딕", "Nanum Gothic", "맑은고딕", "Malgun Gothic"; height: 200px;padding: 100px 100px 50px; background: #000; color: #999;width: 100%;}
+#footer #address1 {position: absolute; font-size: 20px;line-height: 30px;top: 106px; left: 326px;} */
